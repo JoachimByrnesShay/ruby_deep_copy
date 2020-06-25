@@ -32,7 +32,7 @@ end
 def sets_branch(elem)
   # sets are a special case.  by definition sets are not intended to be accessed by element
   # however there may be use cases for accessing set elements via to_a
-  # to_a and sets are also a special
+  # to_a and sets are also a special case
   # because of the way set#to_a hash elements by default which results in unexpected results
   # in object_id when comparing multiple sets.to_a, to_a is redefined here
   # for the singleton class of any set passed to the collection_deep_copy method
